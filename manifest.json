@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Video Call",
+  "version": "1.0",
+  "description": "Quick Video Call",
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://chat.google.com/*",
+        "https://mail.google.com/chat/*"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
