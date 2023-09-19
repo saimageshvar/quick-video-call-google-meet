@@ -5,7 +5,7 @@ function meetingClickHandler(event) {
 function quickConnectFor(meetingElement) {
   const interval = setInterval(function() {
     try {
-      const sendMessageButton = meetingElement.closest("c-wiz").querySelector('div[title="Send Message"]')
+      const sendMessageButton = meetingElement.closest("c-wiz").querySelector('div[title="Send Message" i]')
       if(!sendMessageButton?.getAttribute('aria-disabled')) {
         sendMessageButton.dispatchEvent(new MouseEvent("mousedown", { bubbles: true, cancelable: true, view: window }));
         sendMessageButton.dispatchEvent(new MouseEvent("mouseup", { bubbles: true, cancelable: true, view: window }));
